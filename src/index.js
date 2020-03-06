@@ -25,7 +25,9 @@ function reducer(prevState = defaultState, action){
     console.log("action", action)
     //whatever is returned from this function BECOMES your newv state
         //return an object, (right now ->allows us to always return previous state)
-    return prevState
+    switch(action.type){
+        default: return prevState
+    }
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
