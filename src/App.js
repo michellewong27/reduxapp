@@ -40,7 +40,9 @@ class App extends React.Component {
       case "THANG":
         //add the text inputed to thangs, & resets text to blank
         return {...this.state, thangs: [...this.state.thangs, this.state.text], text: ""}
-    }
+      default:
+        return this.state
+      }
   }
 
   renderThangs = () => {
