@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 
 class App extends React.Component {
-
   state = {
     likes: 0,
     text: "",
@@ -71,7 +70,6 @@ class App extends React.Component {
         <button onClick={() => this.dispatch({type: "DISLIKE"})}>
           Dislike <span role="img" aria-label="thumbs down">👎</span>
         </button>
-
         {this.renderThangs()}
       </div>
     );

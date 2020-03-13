@@ -1,4 +1,3 @@
-
 //define default state as its own variable
 const defaultState = {
     likes: 2000,
